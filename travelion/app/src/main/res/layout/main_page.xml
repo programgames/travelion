@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+   <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal">
+
+
+         <LinearLayout
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_margin="5pt">
+
+             <TextView
+                 android:id="@+id/textView"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/accueil" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="100pt" />
+
+             <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="20pt"
+                 android:orientation="vertical"
+                 android:text = "Ajouter un voyage"
+                 android:onClick="onClickAddVoyage"/>
+
+
+
+             <LinearLayout
+                 android:layout_marginTop="5pt"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:background="@color/colorPrimary"
+                 android:onClick="addVoyage">
+
+
+                 <TextView
+                     android:id="@+id/text_cours"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="@string/v_en_cours"
+                     android:textAllCaps="true"/>
+
+                 <ListView
+                     android:id="@+id/list_cours"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+
+
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_marginTop="5pt"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:background="@color/colorPrimary">
+
+
+                 <TextView
+                     android:id="@+id/text_futur"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="@string/v_a_venir"
+                     android:textAllCaps="true"/>
+
+                 <ListView
+                     android:id="@+id/list_futur"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+
+
+
+             </LinearLayout>
+
+
+
+             <LinearLayout
+                 android:layout_marginTop="5pt"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:background="@color/colorPrimary">
+
+
+                 <TextView
+                     android:id="@+id/text_passe"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="@string/v_passe"
+                     android:textAllCaps="true"/>
+
+                 <ListView
+                     android:id="@+id/list_passe"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+
+
+
+             </LinearLayout>
+
+
+         </LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+

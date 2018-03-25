@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5pt" android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        android:background="@android:color/holo_blue_dark">
+
+        <Button
+            android:gravity="center"
+            android:id="@+id/menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:text="Ajouter une image"
+            ></Button>
+
+
+        <ImageView
+            android:id="@+id/imageS"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+
+            />
+
+        <EditText
+            android:id="@+id/titre"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:hint="Titre" />
+
+
+        <EditText
+            android:id="@+id/souvenir"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+
+
+            android:background="@drawable/rounded_border_edittext"
+            android:inputType="textPersonName"
+            android:hint="Entrez votre souvenir"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_souvenir"/>
+
+        <EditText
+            android:id="@+id/etxt_fromdate"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+           />
+
+        <Button
+            android:id="@+id/buttonsave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Enregistrer"
+
+             />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             />
+
+        <Button
+            android:id="@+id/buttonReturn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

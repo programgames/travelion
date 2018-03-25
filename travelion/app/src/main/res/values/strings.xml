@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Travelion</string>
+    <string name="accueil">Accueil</string>
+    <string name="v_a_venir">Voyages à venir</string>
+    <string name="from_date">Date de ce souvenir</string>
+    <string name="from_dateaffich">Date</string>
+    <string name="addSouvenir">Ajouter un souvenir</string>
+    <string name="v_en_cours">Voyages en cours</string>
+    <string name="v_passe">Voyages passés</string>
+    <string name="lieu">Lieu de Voyage</string>
+    <string name="date_depart">Date de départ</string>
+    <string name="date_retour">Date de retour</string>
+    <string name="a_faire">A faire</string>
+    <string name="annuler">Annuler</string>
+    <string name="valider">Valider</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="nom_voyage">Nom du Voyage</string>
+    <string name="mes_souvenirs">Mes Souvenirs</string>
+    <string name="date_souvenir">Date du souvenir</string>
+    <string name="title_activity_view_to_do">ViewToDoActivity</string>
+
+
+</resources>

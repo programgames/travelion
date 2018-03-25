@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/i1"
+        android:title="Appareil Photo"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/i2"
+        android:title="Galerie"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/i3"
+        android:title="Annuler"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

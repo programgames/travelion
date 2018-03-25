@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alvillafra.travelion">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.example.towntour.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".vues.MainPage"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".vues.AjouterSouvenirActivity"></activity>
+        <activity android:name=".vues.ViewSouvenirActivity"></activity>
+        <activity android:name=".vues.AddVoyagePage" />
+        <activity android:name=".vues.ViewVoyageActivity"></activity>
+        <activity android:name=".vues.AddToDoActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB0jY1BzOx_CYIlzyAaZFxANJgnC3Xh59E" />
+
+        <activity
+            android:name=".vues.widgets.ViewToDoActivity"
+            android:label="@string/title_activity_view_to_do"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service android:name="services.CheckEtatVoyageService"
+            android:enabled="true"></service>
+        <receiver android:name="services.BootBroadcast">
+            2
+            <intent-filter >
+                3
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                4
+            </intent-filter>
+            5
+        </receiver>
+
+    </application>
+
+</manifest>
